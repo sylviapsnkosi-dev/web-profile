@@ -37,12 +37,3 @@ Skills badges / icons
 
 Frontend: HTML5, CSS3, JavaScript
 
-Frameworks: React / Vue / Angular (if applicable)
-
-Styling: TailwindCSS / Bootstrap / custom CSS
-
-Backend: Node.js / Spring Boot / none (if static site)
-
-Deployment: Netlify / GitHub Pages / Vercel / AWS / Render
-
-
