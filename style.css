@@ -1,0 +1,22 @@
+
+.top{
+    background-color: blueviolet;
+    width: 100%;
+
+}
+.name{
+    background-color: aqua;
+    text-decoration: line-through;
+}
+.pp{
+
+    width: 250px;
+    border-radius:250px;
+   
+
+
+    margin-left : 120px;
+
+}
+
+
