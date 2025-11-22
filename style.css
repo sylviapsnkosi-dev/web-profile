@@ -1,22 +1,69 @@
-
-.top{
-    background-color: blueviolet;
-    width: 100%;
-
-}
-.name{
-    background-color: aqua;
-    text-decoration: line-through;
-}
-.pp{
-
-    width: 250px;
-    border-radius:250px;
-   
-
-
-    margin-left : 120px;
-
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* NAVIGATION BAR */
+.navigation {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background: white;
+}
 
+.navigation ul {
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+/* TOP SECTION */
+.top-section {
+  display: flex;
+  justify-content: space-between; /* left and right split */
+  align-items: center;
+  padding: 40px;
+  min-height: 300px;
+}
+
+/* LEFT SIDE MESSAGE BOX */
+.welcome-box {
+  width: 50%;
+}
+
+.welcome-text {
+  font-size: 24px;
+  color: #333;
+}
+
+/* RIGHT SIDE PROFILE */
+.profile {
+  width: 40%;
+  text-align: center;
+}
+
+.pp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
