@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sylvia Nkosi Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav-inner container">
+      <!--<a href="#" class="brand">Sylvia Nkosi</a> -->
+      <nav id="navLinks" class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="navToggle" class="nav-toggle">☰</button>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section hero">
+      <div class="hero-inner container">
+        <div class="hero-left">
+          <img src="profile.jpg" alt="Sylvia Nkosi" class="profile-pic">
+        </div>
+        <div class="hero-right">
+          <pre class="typing-wrapper"><span id="typing" class="typing"></span></pre>
+          <a href="#projects" class="btn">See my work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I have a degree in Information Systems and experience building web apps using Java, Spring Boot, HTML/CSS/JS, Python, and working with SQL Server. I enjoy building full-stack solutions and automating repetitive tasks.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <p>Selected projects with short descriptions and links.</p>
+        <div id="projectsGrid" class="projects-grid"></div>
+      </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>Maven</li>
+          <li>Python</li>
+          <li>Data Structures & Algorithms</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SQL Server</li>
+          <li>REST APIs</li>
+          <li>TDD basics</li>
+          <li>AWS (basic)</li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container contact">
+        <h2>Contact</h2>
+        <p>Want to work together? Send a quick message.</p>
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+            <span id="formMsg" class="form-msg"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 Sylvia Nkosi — Built with ❤️
+  </footer>
+
+  <script src="functionality.js"></script>
+</body>
+</html>
