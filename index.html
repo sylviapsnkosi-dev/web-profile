@@ -1,110 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sylvia Nkosi Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sylvia Nkosi | Aspiring Software Developer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 6px solid #60a5fa;
+      margin-bottom: 24px;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.8rem;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      font-size: 1.35rem;
+      color: #94a3b8;
+      margin-bottom: 32px;
+    }
+
+    .message {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: #cbd5e1;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #2563eb;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+    }
+
+    footer {
+      margin-top: 60px;
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.3rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="container">
+    <img src="profile.jpg" alt="Sylvia Nkosi" class="profile-pic">
+    
+    <h1>Hi, I'm Sylvia Nkosi</h1>
+    <p class="subtitle">Aspiring Software Developer</p>
+    
+    <p class="message">
+      My website is currently undergoing a major transition.<br>
+      I'm working hard to bring you a better experience.<br><br>
+      <strong>Please come back soon!</strong>
+    </p>
 
-  <!-- HEADER / NAVIGATION -->
-  <header class="nav">
-    <div class="nav-inner container">
-      <nav id="navLinks" class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button id="navToggle" class="nav-toggle">☰</button>
-    </div>
-  </header>
+    <a href="mailto:your.email@example.com" class="btn">
+      Get in touch
+    </a>
 
-  <!-- MAIN CONTENT -->
-  <main>
-
-    <!-- HOME / HERO SECTION -->
-    <section id="home" class="section hero">
-      <div class="hero-inner container">
-        <div class="hero-left">
-          <img src="profile.jpg" alt="Sylvia Nkosi" class="profile-pic">
-        </div>
-        <div class="hero-right">
-          <pre class="typing-wrapper"><span id="typing" class="typing"></span></pre>
-          <a href="#projects" class="btn">See my work</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>I have a degree in Information Systems and experience building web apps using Java, Spring Boot, HTML/CSS/JS, Python, and SQL Server. I enjoy creating full-stack solutions and automating repetitive tasks.</p>
-      </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <p>Selected projects with short descriptions and links.</p>
-        <div id="projectsGrid" class="projects-grid"></div>
-      </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>Java</li>
-          <li>Spring Boot</li>
-          <li>Maven</li>
-          <li>Python</li>
-          <li>Data Structures & Algorithms</li>
-          <li>JavaScript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SQL Server</li>
-          <li>REST APIs</li>
-          <li>TDD basics</li>
-          <li>AWS (basic)</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="section">
-      <div class="container contact">
-        <h2>Contact</h2>
-        <p>Want to work together? Send a quick message.</p>
-        <form id="contactForm">
-          <label for="name">Name</label>
-          <input type="text" id="name" required>
-          <label for="email">Email</label>
-          <input type="email" id="email" required>
-          <label for="message">Message</label>
-          <textarea id="message" required></textarea>
-          <div class="form-actions">
-            <button type="submit" class="btn">Send</button>
-            <span id="formMsg" class="form-msg"></span>
-          </div>
-        </form>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    © 2025 Sylvia Nkosi — Built with ❤️
-  </footer>
-
-  <script src="functionality.js"></script>
+    <footer>
+      © 2026 Sylvia Nkosi • Johannesburg, South Africa
+    </footer>
+  </div>
 </body>
 </html>
