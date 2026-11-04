@@ -141,6 +141,23 @@
         width: 100%;
       }
     }
+
+    /* Keep the portrait smaller and anchored to the right */
+    .profile-photo {
+      width: 60%;
+      height: 100%;
+      margin-left: auto;
+      object-fit: contain;
+      object-position: right center;
+    }
+    @media (max-width: 760px) {
+      .profile-photo {
+        width: 100%;
+        margin-left: 0;
+        object-fit: cover;
+        object-position: 72% center;
+      }
+    }
   </style>
 </head>
 <body>
