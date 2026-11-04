@@ -1,39 +1,37 @@
-# web-profile
+# Sylvia Nkosi – Professional Portfolio
 
-Welcome to the source code for my personal portfolio website!
-This site showcases my skills, projects, and background as an aspiring software developer. It serves as a central place for potential employers, collaborators, and recruiters to learn more about who I am and what I can build.
+This repository contains the source code for my professional portfolio website.
 
+**Live website:** https://sylviapsnkosi-dev.github.io/web-profile/
 
-# About the Project
+## About
 
-This website was created to:
+I am Sylvia Nkosi, an Information Systems and Technology graduate from the University of KwaZulu-Natal, building my skills and experience in software development. I am based in Johannesburg, South Africa.
 
-Present my software development journey
+## Website sections
 
-Showcase my best projects and technical skills
+- Home – professional introduction and call to action
+- About – education, background and professional development
+- Services – website development, Java development and Python/data tasks
+- Projects – selected development projects
+- Availability and work location – current working hours and location
+- Why hire me – work ethic and approach to collaboration
+- Rates – starting hourly and project rates
+- Contact – email and GitHub profile
 
-Provide a simple way for employers to contact me
+## Availability
 
-Demonstrate my ability to build clean, functional, and responsive web applications
+Available immediately, Monday to Friday, 08:00–16:00 (South African time).
 
+## Technology
 
-# Features
+- HTML5
+- CSS3
+- Responsive layout
+- GitHub Pages for hosting
 
-Responsive design — works on desktop and mobile
+## Contact
 
-Projects section — highlights my top projects with descriptions and links
+Email: sylviapsnkosi@gmail.com
 
-About Me section — summary of my background and goals
-
-Contact form / contact details — easy way to reach me
-
-Downloadable CV
-
-Skills badges / icons
-
-# Tech Stack
-
-(Adjust based on what you are using)
-
-Frontend: HTML5, CSS3, JavaScript
-
+GitHub: https://github.com/sylviapsnkosi-dev
