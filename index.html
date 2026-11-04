@@ -142,14 +142,11 @@
       }
     }
 
-    /* Full-width portrait banner */
+    /* Keep the full portrait filling the hero; adjust its crop, not its box */
     .profile-photo {
-      display: block;
-      position: static;
       width: 100%;
       height: 100%;
-      max-width: none;
-      margin: 0;
+      margin-left: 0;
       object-fit: cover;
       object-position: 72% center;
     }
