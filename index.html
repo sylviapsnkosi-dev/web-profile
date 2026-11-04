@@ -98,6 +98,49 @@
       .about-grid, .two-col, .cards, .details { grid-template-columns: 1fr; }
       section { padding: 58px 0; }
     }
+
+    /* Full-bleed hero: remove the .wrap width limit from the portrait background */
+    .hero {
+      min-height: 480px;
+      padding: 24px 0;
+    }
+    .hero-layout {
+      width: 100vw;
+      max-width: none;
+      margin-left: calc(50% - 50vw);
+      padding-left: max(calc((100vw - var(--max)) / 2), 20px);
+      padding-right: max(calc((100vw - var(--max)) / 2), 20px);
+      min-height: 432px;
+    }
+    .hero-visual {
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .hero-copy {
+      width: min(56%, 600px);
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        min-height: 540px;
+        padding: 20px 0;
+      }
+      .hero-layout {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        padding: 0 20px;
+        min-height: 500px;
+      }
+      .hero-visual {
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .hero-copy {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
