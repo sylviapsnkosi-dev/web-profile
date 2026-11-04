@@ -142,38 +142,19 @@
       }
     }
 
-    /* Keep the banner full-bleed while showing more of the portrait */
-    .hero-visual {
-      background: #e9eaf0;
-    }
-    .hero-visual::before {
-      content: "";
-      position: absolute;
-      inset: -12px;
-      background: url("./profile.png?v=20261104-1") center / cover no-repeat;
-      filter: blur(10px);
-      opacity: .22;
-    }
+    /* Full-width portrait banner */
     .profile-photo {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: auto;
-      max-width: 58%;
+      display: block;
+      position: static;
+      width: 100%;
       height: 100%;
+      max-width: none;
       margin: 0;
-      object-fit: contain;
-      object-position: right center;
+      object-fit: cover;
+      object-position: 72% center;
     }
     @media (max-width: 760px) {
-      .hero-visual::before {
-        background-position: 72% center;
-      }
       .profile-photo {
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-        object-fit: contain;
         object-position: 72% center;
       }
     }
