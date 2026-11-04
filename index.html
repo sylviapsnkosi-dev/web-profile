@@ -45,6 +45,7 @@
     h1 span { color: var(--accent); }
     .hero-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 64px; align-items: center; }
     .hero-copy { max-width: 680px; color: var(--muted); font-size: 1.15rem; }
+    .hero-copy h1 { color: var(--ink); }
     .hero-visual { position: relative; display: grid; place-items: center; justify-self: end; width: 100%; }
     .hero-visual::before { content: ""; position: absolute; width: min(320px, 92%); aspect-ratio: 1; border-radius: 50%; background: linear-gradient(135deg, #e5e3ff, #f0efff); transform: translate(16px, -12px); }
     .profile-photo { position: relative; z-index: 1; display: block; width: min(300px, 100%); aspect-ratio: 1; object-fit: cover; object-position: center 28%; border-radius: 28px 28px 88px 28px; border: 0; box-shadow: 0 22px 54px rgba(23,32,51,.18); }
@@ -125,7 +126,7 @@
           </div>
         </div>
         <div class="hero-visual">
-          <img class="profile-photo" src="./profile.jpg" alt="Professional portrait of Sylvia Nkosi" width="600" height="600" fetchpriority="high">
+          <img class="profile-photo" src="./profile.jpg" alt="Professional portrait of Sylvia Nkosi" width="360" height="360" fetchpriority="high">
         </div>
       </div>
     </section>
